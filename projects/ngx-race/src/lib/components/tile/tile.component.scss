@@ -1,0 +1,51 @@
+ngx-race-tile {
+    display: block;
+    background: #ccf1ed;
+    border: 1px solid #4e4645;
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin: 1px;
+    box-sizing: border-box;
+
+    div {
+        height: 100%;
+        width: 100%;
+        display: block;
+        background: #ccf1ed;
+    }
+
+    &.free {
+        div {
+            background: #ccf1ed;
+        }
+    }
+    &.car {
+        //padding: 2px;
+        div {
+            background: #4e6c31;
+        }
+    }
+    &.wall {
+        div {
+            background: #575b57;
+        }
+    }
+    &.tail {
+        //padding: 3px;
+        div {
+            background: #4e6c31;
+        }
+    }
+    &.wall {
+        div {
+            background: #C2C3C7;
+        }
+    }
+    &.food {
+        padding: 3px;
+        div {
+            background: #00E436;
+        }
+    }
+}
