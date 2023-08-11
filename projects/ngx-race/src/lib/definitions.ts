@@ -1,4 +1,4 @@
-export type GameGrid = Array<Array<TileState>>;
+export type GameGrid = Array<Array<{ id: number; state: TileState }>>;
 
 export enum GameState {
     Paused = 0,
@@ -10,6 +10,7 @@ export enum TileState {
     Free = 'free',
     Wall = 'wall',
     Car = 'car',
+    OtherCar = 'othercar'
 }
 
 export enum MoveDirections {

@@ -26,7 +26,19 @@ ngx-race-tile {
             background: #4e6c31;
         }
     }
-    &.wall {
+    &.ghost {
+        //padding: 2px;
+        div {
+            background: rgb(78 108 49 / 32%);
+        }
+    }
+    &.ghost2 {
+        //padding: 2px;
+        div {
+            background: rgba(78, 108, 49, 0.2);
+        }
+    }
+    &.othercar {
         div {
             background: #575b57;
         }

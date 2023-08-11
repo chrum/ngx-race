@@ -2,9 +2,8 @@ import {
     ChangeDetectionStrategy,
     Component,
     ElementRef,
-    Input,
-    OnInit,
-    Renderer2,
+    Input, OnChanges,
+    Renderer2, SimpleChange, SimpleChanges,
     ViewEncapsulation
 } from '@angular/core';
 import {TileState} from '../../definitions';
@@ -16,7 +15,7 @@ import {TileState} from '../../definitions';
     encapsulation: ViewEncapsulation.None,
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TileComponent implements OnInit {
+export class TileComponent implements OnChanges {
     @Input() state!: TileState;
 
     constructor(
@@ -25,8 +24,9 @@ export class TileComponent implements OnInit {
     ) {
     }
 
-    ngOnInit() {
+    ngOnChanges(changes: SimpleChanges) {
         if (this.state) {
+            this._renderer.removeClass(this.el.nativeElement, changes['state'].previousValue);
             this._renderer.addClass(this.el.nativeElement, this.state);
         }
 

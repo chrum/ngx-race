@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {GameGrid} from '../../definitions';
 
 @Component({
@@ -13,6 +13,14 @@ export class BoardComponent implements OnInit {
     }
 
     ngOnInit(): void {
+    }
+
+    getCellId(index : number, cell : any) {
+        return index;
+    }
+
+    getRowId(index : number, row : any) {
+        return index;
     }
 
 }

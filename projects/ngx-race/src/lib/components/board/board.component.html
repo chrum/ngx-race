@@ -1,4 +1,4 @@
 <div class="ngx-race-board-row" *ngFor="let row of data">
-    <ngx-race-tile *ngFor="let tileState of row"
-                    [state]="tileState"></ngx-race-tile>
+    <ngx-race-tile *ngFor="let cell of row; trackBy: getRowId"
+                    [state]="cell.state"></ngx-race-tile>
 </div>

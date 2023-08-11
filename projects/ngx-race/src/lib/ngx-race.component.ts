@@ -12,9 +12,9 @@ import {GameManagerService} from "./services/game-manager.service";
 })
 export class NgxRaceComponent implements OnInit {
     @Input() boardHeight: number = 20;
-    @Input() boardWidth: number = 9;
+    @Input() boardWidth: number = 12;
 
-    @Output() foodEaten = this._manager.foodEaten$;
+    @Output() carOvertaken = this._manager.carOvertaken$;
     @Output() gameOver = this._manager.gameOver$;
 
     public grid$ = this._manager.grid$;
@@ -28,9 +28,9 @@ export class NgxRaceComponent implements OnInit {
         this._manager.initialize(this.boardHeight, this.boardWidth);
     }
 
-    public actionUp() { this._manager.up(); }
+    public actionTurboOn() { this._manager.turboOn(); }
+    public actionTurboOff() { this._manager.turboOff(); }
     public actionRight() { this._manager.right(); }
-    public actionDown() { this._manager.down(); }
     public actionLeft() { this._manager.left(); }
 
     public actionStart() {
