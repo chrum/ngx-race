@@ -1,6 +1,7 @@
 # ngx-race
 
-Race game as an angular component
+Race game as an angular component  
+![Race Demo](https://github.com/chrum/ngx-race/blob/master/assets/race.gif)
 
 ***ngx-race*** is actually only the ***core of the game***... YOU need to add everything around it (controls, score...)  yourself :)
 
@@ -39,15 +40,15 @@ export class AppModule {
 #### Add/Connect to your fancy control interface
 ```html
     <ngx-race #game
-        (carOvertaken)="grantPoints()"></ngx-race>
+              (carOvertaken)="grantPoints()"></ngx-race>
 
-        <button (click)="game.actionStart()">Start</button>
-        <button (click)="game.actionStop()">Stop</button>
-        <button (click)="game.actionReset()">Reset</button>
-        <button (click)="game.actionTurboOn()">Turbo ON</button>
-        <button (click)="game.actionLeft()">Left</button>
-        <button (click)="game.actionRight()">Right</button>
-        <button (click)="game.actionTurboOff()">Turbo OFF</button>
+<button (click)="game.actionStart()">Start</button>
+<button (click)="game.actionStop()">Stop</button>
+<button (click)="game.actionReset()">Reset</button>
+<button (click)="game.actionTurboOn()">Turbo ON</button>
+<button (click)="game.actionLeft()">Left</button>
+<button (click)="game.actionRight()">Right</button>
+<button (click)="game.actionTurboOff()">Turbo OFF</button>
 ```
 
 #### Inputs
@@ -91,7 +92,7 @@ export class RaceContainingComponent {
 OR
 ```html
 <ngx-race #game>
-    </ngx-race>
+</ngx-race>
 <button (click)="game.actionTurboOn()">Turbo ON</button>
 ```
 

@@ -1,6 +1,7 @@
 # ngx-race
 
-Race game as an angular component
+Race game as an angular component  
+![Race Demo](https://github.com/chrum/ngx-race/blob/master/assets/race.gif)
 
 ***ngx-race*** is actually only the ***core of the game***... YOU need to add everything around it (controls, score...)  yourself :)
 

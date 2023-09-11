@@ -1,6 +1,6 @@
 {
     "name": "ngx-race",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "author": {
         "name": "Chrystian Ruminowicz",
         "email": "chrystianr@gmail.com"
@@ -22,10 +22,10 @@
         "url": "https://github.com/chrum/ngx-race"
     },
     "peerDependencies": {
-        "@angular/common": "^14.2.0",
-        "@angular/core": "^14.2.0"
+        "@angular/common": ">12.1.0",
+        "@angular/core": ">12.1.0"
     },
     "dependencies": {
-        "tslib": "^2.3.0"
+        "tslib": "^2.2.0"
     }
 }
