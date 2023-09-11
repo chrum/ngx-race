@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {NgxRaceComponent} from "../../../ngx-race/src/lib/ngx-race.component";
+import {NgxRaceComponent} from 'ngx-race';
 
 @Component({
     selector: 'app-root',
@@ -12,29 +12,29 @@ export class AppComponent {
 
     public shortcuts = [
         {
-            key: "up",
+            key: 'up',
             preventDefault: true,
             command: (e: any) => this.game.actionTurboOn()
         },
         {
-            key: "left",
+            key: 'left',
             preventDefault: true,
             command: (e: any) => this.game.actionLeft()
         },
         {
-            key: "right",
+            key: 'right',
             preventDefault: true,
             command: (e: any) => this.game.actionRight()
         },
         {
-            key: "down",
+            key: 'down',
             preventDefault: true,
             command: (e: any) => this.game.actionTurboOff()
         },
     ]
 
-    public onGrow() {
-        console.log('grow');
+    public grantPoints() {
+        console.log('points');
     }
 
     public onGameOver() {

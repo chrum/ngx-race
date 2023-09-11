@@ -4,7 +4,6 @@ import {BoardComponent} from './components/board/board.component';
 import {TileComponent} from './components/tile/tile.component';
 import {CommonModule} from '@angular/common';
 
-
 @NgModule({
     declarations: [
         NgxRaceComponent,

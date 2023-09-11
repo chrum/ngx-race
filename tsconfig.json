@@ -13,6 +13,7 @@
     "sourceMap": true,
     "paths": {
       "ngx-race": [
+        "dist/ngx-race/ngx-snake",
         "dist/ngx-race"
       ]
     },

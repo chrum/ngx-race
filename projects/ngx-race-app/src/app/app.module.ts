@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { NgxRaceModule } from '../../../ngx-race/src/lib/ngx-race.module';
+import { NgxRaceModule } from 'ngx-race';
 import { KeyboardShortcutsModule } from 'ng-keyboard-shortcuts';
 
 @NgModule({

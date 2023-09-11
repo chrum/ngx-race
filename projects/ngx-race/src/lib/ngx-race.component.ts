@@ -1,5 +1,5 @@
 import {Component, Input, OnInit, Output} from '@angular/core';
-import {GameManagerService} from "./services/game-manager.service";
+import {GameManagerService} from './services/game-manager.service';
 
 @Component({
     selector: 'ngx-race',

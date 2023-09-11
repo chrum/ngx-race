@@ -1,5 +1,5 @@
 <ngx-race #game  [class.black-and-white]="bw"
-           (foodEaten)="onGrow()"
+           (carOvertaken)="grantPoints()"
            (gameOver)="onGameOver()"></ngx-race>
 
 <ng-keyboard-shortcuts [shortcuts]="shortcuts"></ng-keyboard-shortcuts>
@@ -16,7 +16,7 @@
   <tr><td></td></tr>
   <tr>
     <td></td>
-    <td><button (click)="game.actionTurboOn()">Tubo ON</button></td>
+    <td><button (click)="game.actionTurboOn()">Turbo ON</button></td>
   </tr>
   <tr>
     <td><button (click)="game.actionLeft()">Left</button></td>

@@ -1,11 +1,31 @@
 {
-  "name": "ngx-race",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^14.2.0",
-    "@angular/core": "^14.2.0"
-  },
-  "dependencies": {
-    "tslib": "^2.3.0"
-  }
+    "name": "ngx-race",
+    "version": "0.0.1",
+    "author": {
+        "name": "Chrystian Ruminowicz",
+        "email": "chrystianr@gmail.com"
+    },
+    "homepage": "http://chrum.it/pages/ngx-race",
+    "keywords": [
+        "angular",
+        "ngx",
+        "ng",
+        "typescript",
+        "race",
+        "f1",
+        "game",
+        "core"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chrum/ngx-race"
+    },
+    "peerDependencies": {
+        "@angular/common": "^14.2.0",
+        "@angular/core": "^14.2.0"
+    },
+    "dependencies": {
+        "tslib": "^2.3.0"
+    }
 }
